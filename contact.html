@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <header id="navbar">
+        <a href="#" class="logo">NightDinner</a>
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span class="menuIcon" onclick="toggleMenu();"></span>
+      </header>
+      <div class="contact-form">
+        <div class="first-container">
+          <div class="info">
+            <div>
+              <h3>Adress</h3>
+              <p>東京都渋谷区２−２−３</p>
+            </div>
+            <div>
+              <h3>Tel Number</h3>
+              <p>東京都渋谷区２−２−３</p>
+            </div>
+            <div>
+              <h3>Support</h3>
+              <p>aaaaaaaaaaa@fafaf.com</p>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?
+pb=!1m18!1m12!1m3!1d3240.827853398542!2d139.76493611522864!3d35
+.68124053757879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2
+!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2
+!1sja!2sjp!4v1594286431753!5m2!1sja!2sjp"
+              width="600"
+              height="450"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+        <div class="sec-container">
+          <h2>Send Us A Message</h2>
+          <form>
+            <div class="form-group">
+              <label>Tell us your name*</label>
+              <input type="text" name="firstname" placeholder="First Name" />
+              <input type="text" name="lastname" placeholder="Last Name" />
+            </div>
+            <div class="form-group">
+              <label>Enter phone email*</label>
+              <input
+                type="text"
+                name="email"
+                placeholder="youremail@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label>Enter phone number*</label>
+              <input
+                type="text"
+                name="phonenumber"
+                placeholder="+1 800 0000000"
+              />
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <input type="text" name="msg" placeholder="Write us a message" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        const menuIcon = document.querySelector(".menuIcon");
+        const navbar = document.getElementById("navbar");
+        menuIcon.classList.toggle("active");
+        navbar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
